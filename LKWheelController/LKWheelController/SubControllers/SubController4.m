@@ -16,8 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.view.backgroundColor = [UIColor redColor];
+    UILabel * lb = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 200, 100)];
+    lb.text = NSStringFromClass(self.class);
+    lb.textColor = [UIColor blackColor];
+    [self.view addSubview:lb];
 }
 
 - (void)didReceiveMemoryWarning {
