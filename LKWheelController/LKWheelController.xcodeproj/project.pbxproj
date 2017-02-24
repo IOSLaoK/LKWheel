@@ -13,6 +13,11 @@
 		A61BE01A1E5FE3AF0092D529 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A61BE0181E5FE3AF0092D529 /* Main.storyboard */; };
 		A61BE01C1E5FE3AF0092D529 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A61BE01B1E5FE3AF0092D529 /* Assets.xcassets */; };
 		A61BE01F1E5FE3AF0092D529 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A61BE01D1E5FE3AF0092D529 /* LaunchScreen.storyboard */; };
+		A61BE0291E5FE45C0092D529 /* LKWheelController.m in Sources */ = {isa = PBXBuildFile; fileRef = A61BE0281E5FE45C0092D529 /* LKWheelController.m */; };
+		A61BE02D1E60061E0092D529 /* SubController1.m in Sources */ = {isa = PBXBuildFile; fileRef = A61BE02C1E60061E0092D529 /* SubController1.m */; };
+		A61BE0331E6006430092D529 /* SubController2.m in Sources */ = {isa = PBXBuildFile; fileRef = A61BE0321E6006430092D529 /* SubController2.m */; };
+		A61BE0361E60064D0092D529 /* SubController3.m in Sources */ = {isa = PBXBuildFile; fileRef = A61BE0351E60064D0092D529 /* SubController3.m */; };
+		A61BE0391E60065D0092D529 /* SubController4.m in Sources */ = {isa = PBXBuildFile; fileRef = A61BE0381E60065D0092D529 /* SubController4.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,16 @@
 		A61BE01B1E5FE3AF0092D529 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A61BE01E1E5FE3AF0092D529 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A61BE0201E5FE3AF0092D529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A61BE0271E5FE45C0092D529 /* LKWheelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKWheelController.h; sourceTree = "<group>"; };
+		A61BE0281E5FE45C0092D529 /* LKWheelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKWheelController.m; sourceTree = "<group>"; };
+		A61BE02B1E60061E0092D529 /* SubController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubController1.h; sourceTree = "<group>"; };
+		A61BE02C1E60061E0092D529 /* SubController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubController1.m; sourceTree = "<group>"; };
+		A61BE0311E6006430092D529 /* SubController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubController2.h; sourceTree = "<group>"; };
+		A61BE0321E6006430092D529 /* SubController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubController2.m; sourceTree = "<group>"; };
+		A61BE0341E60064D0092D529 /* SubController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubController3.h; sourceTree = "<group>"; };
+		A61BE0351E60064D0092D529 /* SubController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubController3.m; sourceTree = "<group>"; };
+		A61BE0371E60065D0092D529 /* SubController4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubController4.h; sourceTree = "<group>"; };
+		A61BE0381E60065D0092D529 /* SubController4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubController4.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,8 @@
 		A61BE00E1E5FE3AF0092D529 /* LKWheelController */ = {
 			isa = PBXGroup;
 			children = (
+				A61BE02A1E6006100092D529 /* SubControllers */,
+				A61BE0261E5FE4550092D529 /* LKWheelTools */,
 				A61BE0121E5FE3AF0092D529 /* AppDelegate.h */,
 				A61BE0131E5FE3AF0092D529 /* AppDelegate.m */,
 				A61BE0151E5FE3AF0092D529 /* ViewController.h */,
@@ -77,6 +94,30 @@
 				A61BE0101E5FE3AF0092D529 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A61BE0261E5FE4550092D529 /* LKWheelTools */ = {
+			isa = PBXGroup;
+			children = (
+				A61BE0271E5FE45C0092D529 /* LKWheelController.h */,
+				A61BE0281E5FE45C0092D529 /* LKWheelController.m */,
+			);
+			path = LKWheelTools;
+			sourceTree = "<group>";
+		};
+		A61BE02A1E6006100092D529 /* SubControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A61BE02B1E60061E0092D529 /* SubController1.h */,
+				A61BE02C1E60061E0092D529 /* SubController1.m */,
+				A61BE0311E6006430092D529 /* SubController2.h */,
+				A61BE0321E6006430092D529 /* SubController2.m */,
+				A61BE0341E60064D0092D529 /* SubController3.h */,
+				A61BE0351E60064D0092D529 /* SubController3.m */,
+				A61BE0371E60065D0092D529 /* SubController4.h */,
+				A61BE0381E60065D0092D529 /* SubController4.m */,
+			);
+			path = SubControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +190,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A61BE0361E60064D0092D529 /* SubController3.m in Sources */,
 				A61BE0171E5FE3AF0092D529 /* ViewController.m in Sources */,
 				A61BE0141E5FE3AF0092D529 /* AppDelegate.m in Sources */,
+				A61BE0291E5FE45C0092D529 /* LKWheelController.m in Sources */,
 				A61BE0111E5FE3AF0092D529 /* main.m in Sources */,
+				A61BE0391E60065D0092D529 /* SubController4.m in Sources */,
+				A61BE02D1E60061E0092D529 /* SubController1.m in Sources */,
+				A61BE0331E6006430092D529 /* SubController2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
