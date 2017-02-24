@@ -46,7 +46,7 @@
     UICollectionView * collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 64, LKScreenWidth, 44) collectionViewLayout:layout];
     collectionView.delegate = self;
     collectionView.dataSource = self;
-    collectionView.backgroundColor = [UIColor redColor];
+    collectionView.backgroundColor = [UIColor whiteColor];
     [collectionView registerClass:[LKWheelCell class] forCellWithReuseIdentifier:@"wheel"];
     collectionView.bounces = NO;
     self.titleView = collectionView;
@@ -78,6 +78,7 @@
 {
     LKWheelCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"wheel" forIndexPath:indexPath];
     cell.isSelect = indexPath.item == self.selectIndex;
+    cell.index = indexPath.item;
     return cell;
 }
 /**
