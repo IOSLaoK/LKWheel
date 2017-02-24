@@ -18,6 +18,9 @@
 		A61BE0331E6006430092D529 /* SubController2.m in Sources */ = {isa = PBXBuildFile; fileRef = A61BE0321E6006430092D529 /* SubController2.m */; };
 		A61BE0361E60064D0092D529 /* SubController3.m in Sources */ = {isa = PBXBuildFile; fileRef = A61BE0351E60064D0092D529 /* SubController3.m */; };
 		A61BE0391E60065D0092D529 /* SubController4.m in Sources */ = {isa = PBXBuildFile; fileRef = A61BE0381E60065D0092D529 /* SubController4.m */; };
+		A61D1EB11E601B9C0010BB1A /* LKWheelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A61D1EB01E601B9C0010BB1A /* LKWheelCell.m */; };
+		A61D1EB81E6023EC0010BB1A /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = A61D1EB51E6023EC0010BB1A /* UITableView+SDAutoTableViewCellHeight.m */; };
+		A61D1EB91E6023EC0010BB1A /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A61D1EB71E6023EC0010BB1A /* UIView+SDAutoLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,13 @@
 		A61BE0351E60064D0092D529 /* SubController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubController3.m; sourceTree = "<group>"; };
 		A61BE0371E60065D0092D529 /* SubController4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubController4.h; sourceTree = "<group>"; };
 		A61BE0381E60065D0092D529 /* SubController4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubController4.m; sourceTree = "<group>"; };
+		A61D1EAF1E601B9C0010BB1A /* LKWheelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKWheelCell.h; sourceTree = "<group>"; };
+		A61D1EB01E601B9C0010BB1A /* LKWheelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKWheelCell.m; sourceTree = "<group>"; };
+		A61D1EB31E6023EC0010BB1A /* SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAutoLayout.h; sourceTree = "<group>"; };
+		A61D1EB41E6023EC0010BB1A /* UITableView+SDAutoTableViewCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SDAutoTableViewCellHeight.h"; sourceTree = "<group>"; };
+		A61D1EB51E6023EC0010BB1A /* UITableView+SDAutoTableViewCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SDAutoTableViewCellHeight.m"; sourceTree = "<group>"; };
+		A61D1EB61E6023EC0010BB1A /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
+		A61D1EB71E6023EC0010BB1A /* UIView+SDAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDAutoLayout.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +83,7 @@
 		A61BE00E1E5FE3AF0092D529 /* LKWheelController */ = {
 			isa = PBXGroup;
 			children = (
+				A61D1EB21E6023EC0010BB1A /* SDAutoLayout */,
 				A61BE02A1E6006100092D529 /* SubControllers */,
 				A61BE0261E5FE4550092D529 /* LKWheelTools */,
 				A61BE0121E5FE3AF0092D529 /* AppDelegate.h */,
@@ -101,6 +112,8 @@
 			children = (
 				A61BE0271E5FE45C0092D529 /* LKWheelController.h */,
 				A61BE0281E5FE45C0092D529 /* LKWheelController.m */,
+				A61D1EAF1E601B9C0010BB1A /* LKWheelCell.h */,
+				A61D1EB01E601B9C0010BB1A /* LKWheelCell.m */,
 			);
 			path = LKWheelTools;
 			sourceTree = "<group>";
@@ -118,6 +131,18 @@
 				A61BE0381E60065D0092D529 /* SubController4.m */,
 			);
 			path = SubControllers;
+			sourceTree = "<group>";
+		};
+		A61D1EB21E6023EC0010BB1A /* SDAutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				A61D1EB31E6023EC0010BB1A /* SDAutoLayout.h */,
+				A61D1EB41E6023EC0010BB1A /* UITableView+SDAutoTableViewCellHeight.h */,
+				A61D1EB51E6023EC0010BB1A /* UITableView+SDAutoTableViewCellHeight.m */,
+				A61D1EB61E6023EC0010BB1A /* UIView+SDAutoLayout.h */,
+				A61D1EB71E6023EC0010BB1A /* UIView+SDAutoLayout.m */,
+			);
+			path = SDAutoLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,9 +215,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A61D1EB91E6023EC0010BB1A /* UIView+SDAutoLayout.m in Sources */,
 				A61BE0361E60064D0092D529 /* SubController3.m in Sources */,
+				A61D1EB11E601B9C0010BB1A /* LKWheelCell.m in Sources */,
 				A61BE0171E5FE3AF0092D529 /* ViewController.m in Sources */,
 				A61BE0141E5FE3AF0092D529 /* AppDelegate.m in Sources */,
+				A61D1EB81E6023EC0010BB1A /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				A61BE0291E5FE45C0092D529 /* LKWheelController.m in Sources */,
 				A61BE0111E5FE3AF0092D529 /* main.m in Sources */,
 				A61BE0391E60065D0092D529 /* SubController4.m in Sources */,
@@ -344,6 +372,7 @@
 				A61BE0251E5FE3AF0092D529 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

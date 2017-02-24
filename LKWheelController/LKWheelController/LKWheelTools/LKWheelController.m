@@ -3,6 +3,7 @@
 #import "SubController2.h"
 #import "SubController3.h"
 #import "SubController4.h"
+#import "LKWheelCell.h"
 //颜色
 #define LKRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
 #define LKRGBAColor(r, g, b ,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
@@ -46,7 +47,7 @@
     collectionView.delegate = self;
     collectionView.dataSource = self;
     collectionView.backgroundColor = [UIColor redColor];
-    [collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"wheel"];
+    [collectionView registerClass:[LKWheelCell class] forCellWithReuseIdentifier:@"wheel"];
     collectionView.bounces = NO;
     self.titleView = collectionView;
     [self.view addSubview:collectionView];
@@ -75,8 +76,8 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"wheel" forIndexPath:indexPath];
-    cell.backgroundColor = indexPath.item == self.selectIndex ?[UIColor redColor] : LKRandomColor;
+    LKWheelCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"wheel" forIndexPath:indexPath];
+    cell.isSelect = indexPath.item == self.selectIndex;
     return cell;
 }
 /**
@@ -86,7 +87,6 @@
 {
     [_scrollSubView setContentOffset:CGPointMake(indexPath.item * LKScreenWidth, 0) animated:YES];
 }
-
 /**
  * 在scrollView滚动动画结束时, 就会调用这个方法
  * 前提: 人为拖拽scrollView产生的滚动动画
@@ -95,7 +95,6 @@
 {
     [self scrollViewDidEndScrollingAnimation:scrollView];
 }
-
 /**
  * 在scrollView滚动动画结束时, 就会调用这个方法
  * 前提:使用setContentOffset:animated:或者scrollRectVisible:animated:方法让scrollView产生滚动动画
