@@ -1,18 +1,14 @@
 #import "LKWheelCell.h"
 #import "SDAutoLayout.h"
+
 @interface LKWheelCell()
 /**<##>文字 */
 @property(nonatomic,strong)UILabel * indexText_LB;
-
 /**下标 */
 @property(nonatomic,strong)UIView * bottomIndex_V;
 @end
 
-
 @implementation LKWheelCell
-
-
-
 - (instancetype)initWithFrame:(CGRect)frame
 {
     if(self = [super initWithFrame:frame])
